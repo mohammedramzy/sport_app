@@ -1,0 +1,15 @@
+{
+  "loading" : "Loading..",  
+  "yes" : "yes",
+  "no" : "no",
+  "exit" : "Do you want to exit ?",
+  "change_lang_button_text":"change language",
+  "home_screen":"Home",
+  "league_table_screen":"League table",
+  "news_screen":"News",
+  "statistics_screen":"Statistics",
+  "more_screen":"More"
+
+  
+  
+}

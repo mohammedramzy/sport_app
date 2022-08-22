@@ -1,0 +1,13 @@
+{
+  "loading" : "جار التحميل..",  
+  "yes" : "نعم",
+  "no" : "لا",
+  "exit" : "هل انت تريد الخروج؟",
+  "change_lang_button_text":"تغيير اللغة",
+  "home_screen":"الرئيسية",
+  "league_table_screen":"جدول الدوري",
+  "news_screen":"الركز الاعلامي",
+  "statistics_screen":"احصائيات كاملة",
+  "more_screen":"المزيد"
+
+}
