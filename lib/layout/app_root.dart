@@ -16,7 +16,13 @@ class AppRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (BuildContext context) => MainCubit()),
+        BlocProvider(
+          create: (BuildContext context) => MainCubit()
+            ..getUsers()
+            ..getImages()
+            ..getVideos()
+            ..getNews(1),
+        ),
       ],
       child: BlocConsumer<MainCubit, MainState>(
         listener: (context, state) {},

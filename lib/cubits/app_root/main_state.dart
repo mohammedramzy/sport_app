@@ -10,3 +10,13 @@ class ChangeBottomNavBarState extends MainState {}
 
 ///////////////////////////////////////////////////////
 class ChangeAppLanguageState extends MainState {}
+
+class AddImageLoadingState extends MainState {}
+
+class AddImageSuccessState extends MainState {}
+
+class AddImageErrorState extends MainState {}
+
+class GetNewsLoadingState extends MainState {}
+
+class GetNewsSuccessState extends MainState {}

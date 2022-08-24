@@ -4,6 +4,8 @@ import 'package:sport_app/core/components/app_language.dart';
 import 'package:sport_app/core/components/default_icons.dart';
 import 'package:sport_app/core/style/app_colors.dart';
 import 'package:sport_app/core/style/app_text_style.dart';
+import 'package:sport_app/core/utils/navigation_utility.dart';
+import 'package:sport_app/modules/contact_us.dart';
 
 class MoreScreen extends StatelessWidget {
   const MoreScreen({super.key});
@@ -26,60 +28,70 @@ class MoreScreen extends StatelessWidget {
                 const LogoIcon(),
                 ListTile(
                   title: Text(
-                    "دليل النوادي",
+                    getLang(context).clubs_guide,
                     style: AppTextStyle.headLine()
                         .copyWith(color: AppColors.backGroundColor),
                   ),
                 ),
                 ListTile(
                   title: Text(
-                    "دليل الملاعب",
+                    getLang(context).games_guide,
                     style: AppTextStyle.headLine()
                         .copyWith(color: AppColors.backGroundColor),
                   ),
                 ),
                 ListTile(
                   title: Text(
-                    "من نحن",
+                    getLang(context).who_we_us,
                     style: AppTextStyle.headLine()
                         .copyWith(color: AppColors.backGroundColor),
                   ),
                 ),
                 ListTile(
                   title: Text(
-                    "الأنظمة واللوائح",
+                    getLang(context).systems_conditions,
                     style: AppTextStyle.headLine()
                         .copyWith(color: AppColors.backGroundColor),
                   ),
                 ),
                 ListTile(
                   title: Text(
-                    "اللجان",
+                    getLang(context).committees,
+                    style: AppTextStyle.headLine()
+                        .copyWith(color: AppColors.backGroundColor),
+                  ),
+                ),
+                ListTile(
+                  onTap: () {
+                    NavigationUtils.navigateTo(
+                        context: context,
+                        destinationScreen: const ContactUsScreen());
+                  },
+                  title: Text(
+                    getLang(context).contact_us,
                     style: AppTextStyle.headLine()
                         .copyWith(color: AppColors.backGroundColor),
                   ),
                 ),
                 ListTile(
                   title: Text(
-                    "اتصل بنا",
+                    getLang(context).share_app,
                     style: AppTextStyle.headLine()
                         .copyWith(color: AppColors.backGroundColor),
                   ),
                 ),
                 ListTile(
                   title: Text(
-                    "شارك التطبيق",
+                    getLang(context).subscribe_news,
                     style: AppTextStyle.headLine()
                         .copyWith(color: AppColors.backGroundColor),
                   ),
                 ),
-                ListTile(
-                  title: Text(
-                    "الاشتراك بالنشرة الاخبارية",
-                    style: AppTextStyle.headLine()
-                        .copyWith(color: AppColors.backGroundColor),
-                  ),
-                ),
+                const ListTile(
+                    title: LangSwitch(
+                  isExpanded: true,
+                  width: 100,
+                )),
                 Container(
                   width: double.infinity.w,
                   padding: getLang(context).localeName == "ar"
