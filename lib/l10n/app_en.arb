@@ -42,6 +42,9 @@
   "phone_must_start_with":"phone must start with 05",
   "enter_valid_phone_number":"enter valid phone number",
   "address_cannot_be_empty":"Address cannot be empty",
-  "message_cannot_be_empty":"Message cannot be empty"
+  "message_cannot_be_empty":"Message cannot be empty",
+  "sponsers":"Sponsers",
+  "more":"More",
+  "next_matches":"Next Matches"
   
 }

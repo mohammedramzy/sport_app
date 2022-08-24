@@ -42,7 +42,10 @@
   "phone_must_start_with":"رقم الهاتف يجب اي يبدأ ب 05",
   "enter_valid_phone_number":"ادخل رقم هاتف صحيح",
   "address_cannot_be_empty":"العنوان لا يمكن ان يكون فارغا",
-  "message_cannot_be_empty":"الرسالة لا يمكن ان تكون فارغة"
+  "message_cannot_be_empty":"الرسالة لا يمكن ان تكون فارغة",
+  "sponsers":"الرعاة",
+  "more":"المزيد",
+  "next_matches":"المباريات القادمة"
 
 
 }

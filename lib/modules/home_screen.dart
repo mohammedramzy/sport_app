@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     GestureDetector(
                                       onTap: () => mainCubit.changeBottomNav(2),
                                       child: Text(
-                                        "More",
+                                        getLang(context).more,
                                         style: TextStyle(color: Colors.blue),
                                       ),
                                     ),
@@ -93,13 +93,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      "Next Matches",
+                                      getLang(context).next_matches,
                                       style: AppTextStyle.bodyText(),
                                     ),
                                     GestureDetector(
                                       onTap: () => mainCubit.changeBottomNav(1),
                                       child: Text(
-                                        "More",
+                                        getLang(context).more,
                                         style: TextStyle(color: Colors.blue),
                                       ),
                                     ),
@@ -176,7 +176,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      "Sponsers",
+                                      getLang(context).sponsers,
                                       style: AppTextStyle.bodyText(),
                                     ),
                                   ],
